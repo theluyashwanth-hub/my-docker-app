@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/theluyashwanth-hub/my-docker-app.git'
+                git branch: 'main', url: 'https://github.com/theluyashwanth-hub/my-docker-app.git'
             }
         }
 
